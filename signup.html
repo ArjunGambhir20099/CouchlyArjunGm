@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--Make the webpage responsive using the 2 Meta Tags-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--Adding a title and small icon in the head section of the webpage-->
+  <title>Couchly Home Décor</title>
+  <link rel="icon" type="image/x-icon" href="images/couchlyI.png">
+<!--Adding an external stylesheet-->  
+  <link href="style.css" rel="stylesheet" type="text/css" />
+<!--Adding an google fonts stylesheet-->  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+<!--Adding an font awesome icon stylesheet-->  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<!----------------------------------------------------------------------------------->
+<!--Header with Search Bar and Cart Login Icons-->  
+<div class="topribbon">
+   
+    <div class="header">
+        <a href="index.html"><img src="images/couchlyL.png" id="logo"></a>
+        <a href="index.html" style="text-decoration: none;"><span class="title">Couchly</span></a>
+    </div>
+
+    <div class="links">
+        <a href="about.html" style="text-decoration: none;"><span class="nav">about</span></a>
+        <a href="homedelivery.html" style="text-decoration: none;"><span class="nav">home-delivery</span></a>
+        <a href="store.html" style="text-decoration: none;"><span class="nav">store</span></a>
+
+    </div>
+
+    <div class="search">
+        <input type="text" id="searchbar" placeholder="search category, product" onkeyup="search_brand()" name='search'>
+    </div>
+
+    <div class="user">
+        <img src="images/cart.png" id="cart">
+        <button id="login" onclick="window.location.href='signup.html';">Sign-In</button>
+    </div>
+</div>
+
+<!----------------------------------------------------------------------------------->
+<div class="spacer"></div>
+
+<!----------------------------------------------------------------------------------->
+
+<div class="usertype" id="myUsers">
+    <a href="signup.html" class="active">Sign-In</a>
+    <a href="#" onclick="openSign(event, 'reguser')" class="siglinks">Registered Users</a>
+    <a href="#" onclick="openSign(event, 'signup')" class="siglinks">New User</a>
+</div>
+
+
+<div id="reguser" class="sigcontent" style="display:block">
+    <p style="font-size: 3vh;width:100%">We are Happy to have you!</p>
+    <div id="best-grid">
+        <div>
+            <input type='text' placeholder="Name" style="width:50vw;height:10vh;border:none;border-radius:10pt;font-size: 3vh;padding-left:15px;color:black;margin-top:1em">
+            <input type='text' placeholder="Email ID" style="width:50vw;height:10vh;border:none;border-radius:10pt;font-size: 3vh;padding-left:15px;color:black;margin-top:1em">
+            <input type='text' placeholder="Password" style="width:50vw;height:10vh;border:none;border-radius:10pt;font-size: 3vh;padding-left:15px;color:black;margin-top:1em">
+            <br><br>
+            <button style="width:20vw;height:10vh;
+                    background-color:azure;color:grey;border-radius: 10pt;
+                    font-size: 3vh;text-align: center;
+                    border:1pt solid grey;" onclick = "logged()" >Go</button>
+        
+        </div>
+    </div>
+</div>
+<div id="signup" class="sigcontent">
+    <p style="font-size: 3vh;width:100%">Welcome to the family!</p>
+    <div id="best-grid">
+        <div>
+            <input type='text' placeholder="Name" style="width:50vw;height:10vh;border:none;border-radius:10pt;font-size: 3vh;padding-left:15px;color:black;margin-top:1em">
+            <input type='text' placeholder="Email ID" style="width:50vw;height:10vh;border:none;border-radius:10pt;font-size: 3vh;padding-left:15px;color:black;margin-top:1em">
+                <input type='text' placeholder="Phone number" style="width:50vw;height:10vh;border:none;border-radius:10pt;font-size: 3vh;padding-left:15px;color:black;margin-top:1em">
+                <input type='text' placeholder="Password" style="width:50vw;height:10vh;border:none;border-radius:10pt;font-size: 3vh;padding-left:15px;color:black;margin-top:1em">
+                <br><br>
+                <a href ="signup.html" style="text-decoration: none;"><input type="text" placeholder="Register" style="width:20vw;height:10vh;
+                background-color:azure;color:white;border-radius: 10pt;font-size: 3vh;text-align: center;border:1pt solid grey;" readonly></a>
+        </div>
+    </div>
+</div>
+
+<!----------------------------------------------------------------------------------->
+<div class="spacer"></div>
+
+<!----------------------------------------------------------------------------------->
+<!--Footer-->
+<footer class="foot">
+    <div>
+        <p>Find us on Social Media</p>
+        <div>
+          <a href="#"><img src='images/insta.png'></a>
+          <a href="#"><img src='images/facebook.png'></a>
+          <a href="#"><img src='images/twitter.png'></a>
+          <a href="#"><img src='images/mail.png'></a>
+        </div>
+    </div>
+      <div>
+        <p onclick="window.location.href='index.html';" style="cursor:pointer">Home</p>
+        <p onclick="window.location.href='about.html';" style="cursor:pointer">About Us</p>
+        <p onclick="window.location.href='homedelivery.html';" style="cursor:pointer">Home-Delivery</p>
+        <p onclick="window.location.href='store.html#navigatehere';" style="cursor:pointer">Locate Stores</p>
+      </div>
+  
+      <div>
+        <p onclick="window.location.href='signup.html';" style="cursor:pointer">My Account</p>
+        <p onclick="window.location.href='signup.html';" style="cursor:pointer">My Collections</p>
+        <p onclick="window.location.href='signup.html';" style="cursor:pointer">My Favorites</p>
+        <p onclick="window.location.href='signup.html';" style="cursor:pointer">Recently Added</p>
+      </div>
+</footer>
+<!--Adding an external javascript-->
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,602 @@
+*
+{
+    padding:0;
+    font-family: 'Raleway', sans-serif;
+}
+
+body
+{
+  background-color:#f1f1f1;
+}
+
+/*--------------------------------------*/
+
+/* Styling for the Top Logo Ribbon */
+.topribbon
+{
+    height:75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position:sticky;
+    top:0%;
+    background-color:#f1f1f1;
+    z-index:9;
+}
+
+.header
+{
+    display:flex;
+    align-items:center;
+    height:50px;
+    width:20%;
+}
+
+#logo
+{
+    width:3.5vw;
+}
+.title
+{
+    padding-left: 1.5vw;
+    font-size: 4vw;
+    font-family: 'Lobster Two', cursive;
+    font-weight: 700;
+    color:#ee4c58;
+}
+
+.links
+{
+    width:30%;
+    height:50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav
+{
+    font-size: 2vw;
+    color:#56c1ab;
+}
+
+.search
+{
+    width:30%;
+    height:50px;
+    display:flex;
+    align-items: center
+}
+
+#searchbar{
+    width: 80%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid #d1d1d1;
+    text-transform: capitalize;
+    background: none;
+    color: #a9a9a9;
+    outline: none;
+    font-family: 'Raleway',sans-serif;
+    font-size: 2.0vh;
+    padding-left: 1vw;
+}
+
+.user
+{
+    width:20%;
+    height:50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#cart
+{
+    width:2vw;
+}
+
+#login
+{
+    font-size:1.5vw;  
+    background-color:#56c1ab;
+    border-radius:1vw;
+    border-color:#56c1ab;
+    outline:none;
+    color:white;  
+    padding:0.5vw;
+    width:60%;
+    height:100%;
+}
+/*--------------------------------------*/
+
+
+.categories {
+    overflow: hidden;
+    background-color: #505050;
+    margin-top: 1vw;
+}
+  
+  .categories a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .categories a:hover {
+    background-color: #56c1ab;
+    color: black;
+  }
+  
+  .categories a.active {
+    background-color: #56c1ab;
+    color: black;
+  }
+  
+  .categories .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 907px) {
+    .categories a:not(:first-child) {display: none;}
+    .categories a.icon {
+      float: right;
+      display: block;
+
+    }
+  }
+  
+  @media screen and (max-width: 907px) {
+    .categories.responsive {position: relative;}
+    .categories.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .categories.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+  
+
+/*-----------Home Landing Styling-------------*/
+.landing
+{
+    height:100vh;
+    background-image: url(images/retro-room-interior.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.phrase1
+{
+    width:60%;
+    position:relative;
+    top:5%;
+    left:0%;
+    padding-left: 4vw;
+    font-size: 6vh;
+    color:#505050;
+    font-family: 'Lobster Two', cursive;
+}
+.phrase2
+{
+    width:60%;
+    position:relative;
+    padding-left: 4vw;
+    font-size: 3vh;
+    color:#505050;
+    font-family: 'Lobster Two', cursive;
+}
+
+/*-----------Footer Styling-------------*/
+.foot{
+    height:30vw;
+    background: #383838;
+    margin-top: 3em;
+    background-image: url(images/sofa-pink-room.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+}
+
+@media screen and (max-width: 907px) {
+    .foot {
+      height:75vh;
+    float: none;
+    display: block;
+    text-align: left;
+    padding:1em;
+  
+  }
+}
+
+
+/*-------------------------------------------------*/
+.spacer
+{
+    height:3vw;
+}
+
+/*-----------Shop our Best Sellers-------------*/
+#best-grid 
+{
+    margin-top:2vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 5vw;
+}
+
+#best-grid>div>div>img
+{
+    max-width: 100%;
+    height: auto;
+	transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+}
+
+  
+/*-----------New Launches-------------*/
+#new-launch 
+{
+    margin-top:2vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-gap: 5vw;
+}
+
+#new-launch>div 
+{
+    background: #56c1ab;
+    border-radius: 10px;
+    margin: 1rem 0;
+    padding: 1rem 1rem 1rem 1rem;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	cursor: pointer;
+	transition: all 0.25s;
+}
+#new-launch>div:hover
+{
+	transform: scale(1.03);
+}  
+
+
+#new-launch>div>div>img
+{
+    max-width: 100%;
+    height: auto;
+    transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+}
+
+#new-launch>div>div>p
+{
+    font-size:4vh;
+}
+
+/*----------Uniquely Crafted-------------*/
+.row
+{
+    display:flex;
+    height:70vh;
+    background-color:antiquewhite;
+    justify-content:space-around;
+    align-items: center;
+    padding:1em 1em 1em 1em;
+}
+.cola
+{
+    width:60%;
+    height: 100%;
+}
+.cola h2
+{
+    position:relative;top:8%;left:10%; font-family: 'Lobster Two', cursive;
+    color:#383838
+
+}
+.cola p
+{
+    position:relative;top:8%;left:10%;width:75%;font-size:2.5vh;line-height: 8vh;
+    color:#383838
+
+}
+.colb
+{
+    width:40%;
+    background-color: #383838;
+    height: 100%;
+    background-image: url(images/beautiful-vintage-remodel-outdoor-filter.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+@media screen and (max-width:900px) {
+    .row{height:75vh;display: block;float:none;text-align: left;padding:0;margin:auto;}
+    .cola{height:50%;width:100%; margin:auto;}
+    .colb{height:40%;width:90%;margin:auto;}
+    .cola p{width:90%;position:relative;top:5%;left:5%;line-height: 3vh;font-size: 2.5vh;}
+    .cola h2{position:relative;top:3%;left:5%}
+}
+
+
+/*----------Affordable Changes-------------*/
+.affordable-slider
+{
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+.affordable-card
+{
+    flex: 0 0 auto;
+    width: 250px;
+    height: 350px;
+    border:1px solid #ebeaea;
+    border-radius: 10px;
+    margin: 1rem 1rem;
+    padding: 1rem 1rem 1rem 1rem;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.affordable-card>div
+{
+    position:relative;
+    top:75%;
+    background-color: #56c1ab;
+    color:white;
+    text-align: center;
+    font-size: 3vh;
+    border:1px solid #ebeaea;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+/*----------Categories Tab-------------*/
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+#sofas
+{
+    display:block;
+}
+
+#submitbtn
+{
+    font-size:2.5vh;  
+    background-color:#56c1ab;
+    border-radius:1vw;
+    border-color:#56c1ab;
+    outline:none;
+    color:white;  
+    padding:0.5vw;
+    width:20%;
+}
+
+.rowtt
+{
+    display:flex;
+    height:35vh;
+    background-color:antiquewhite;
+    justify-content:space-around;
+    align-items: center;
+    padding:1em 1em 1em 1em;
+}
+.colatt
+{
+    width:60%;
+    height: 100%;
+    padding:1em;
+    font-size:3.0vh;
+}
+#invoice, #mobile{
+    width: 50%;
+    height: 4.5vh;
+    border-radius: 10px;
+    border: 1px solid #d1d1d1;
+    text-transform: capitalize;
+    background: white;
+    color: #a9a9a9;
+    outline: none;
+    font-family: 'Raleway',sans-serif;
+    font-size: 2.0vh;
+    padding: 1vw;
+}
+
+.colbtt
+{
+    width:40%;
+    background-color: #383838;
+    height: 100%;
+    background-image: url(images/beautiful-vintage-remodel-outdoor-filter.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+@media screen and (max-width:900px) {
+    .rowtt{height:50vh;display: block;float:none;text-align: left;padding:0;margin:auto;}
+    .colatt{height:50%;width:100%; margin:auto;}
+    .colbtt{height:40%;width:90%;margin:auto;}
+}
+
+
+/*-----------------------------------------------*/
+
+.locations {
+    overflow: hidden;
+    background-color: #505050;
+    margin-top: 1vw;
+}
+  
+  .locations a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .locations a:hover {
+    background-color: #56c1ab;
+    color: black;
+  }
+  
+  .locations a.active {
+    background-color: #56c1ab;
+    color: black;
+  }
+  
+  .locations .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 907px) {
+    .locations a:not(:first-child) {display: none;}
+    .locations a.icon {
+      float: right;
+      display: block;
+
+    }
+  }
+  
+  @media screen and (max-width: 907px) {
+    .locations.responsive {position: relative;}
+    .locations.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .locations.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+  
+  .loccontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+
+.maps
+{
+width:85vw;
+}
+
+
+/*-----------------------------------------------*/
+
+
+.usertype {
+  overflow: hidden;
+  background-color: #505050;
+  margin-top: 1vw;
+}
+
+.usertype a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.usertype a:hover {
+  background-color: #56c1ab;
+  color: black;
+}
+
+.usertype a.active {
+  background-color: #56c1ab;
+  color: black;
+}
+
+.usertype .icon {
+  display: none;
+}
+
+@media screen and (max-width: 907px) {
+  .usertype a:not(:first-child) {display: none;}
+  .usertype a.icon {
+    float: right;
+    display: block;
+
+  }
+}
+
+@media screen and (max-width: 907px) {
+  .usertype.responsive {position: relative;}
+  .usertype.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .usertype.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.sigcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}

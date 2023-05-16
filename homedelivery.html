@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--Make the webpage responsive using the 2 Meta Tags-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--Adding a title and small icon in the head section of the webpage-->
+  <title>Couchly Home Décor</title>
+  <link rel="icon" type="image/x-icon" href="images/couchlyI.png">
+<!--Adding an external stylesheet-->  
+  <link href="style.css" rel="stylesheet" type="text/css" />
+<!--Adding an google fonts stylesheet-->  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+<!--Adding an font awesome icon stylesheet-->  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<!----------------------------------------------------------------------------------->
+<!--Header with Search Bar and Cart Login Icons-->  
+<div class="topribbon">
+   
+    <div class="header">
+        <a href="index.html"><img src="images/couchlyL.png" id="logo"></a>
+        <a href="index.html" style="text-decoration: none;"><span class="title">Couchly</span></a>
+    </div>
+
+    <div class="links">
+        <a href="about.html" style="text-decoration: none;"><span class="nav">about</span></a>
+        <a href="homedelivery.html" style="text-decoration: none;"><span class="nav">home-delivery</span></a>
+        <a href="store.html" style="text-decoration: none;"><span class="nav">store</span></a>
+
+    </div>
+
+    <div class="search">
+        <input type="text" id="searchbar" placeholder="search category, product" onkeyup="search_brand()" name='search'>
+    </div>
+
+    <div class="user">
+        <img src="images/cart.png" id="cart">
+        <button id="login" onclick="window.location.href='signup.html';">Sign-In</button>
+    </div>
+</div>
+
+<!----------------------------------------------------------------------------------->
+<!--Major Product Categories Horizontal Ribbon-->
+<div class="categories" id="myCategories">
+  <a href="homedelivery.html" class="active">Categories</a>
+  <a href="#" onclick="openCity(event, 'sofas')" class="tablinks">Sofas</a>
+  <a href="#" onclick="openCity(event, 'chairs')" class="tablinks">Chairs</a>
+  <a href="#" onclick="openCity(event, 'tables')" class="tablinks">Tables</a>
+  <a href="#" onclick="openCity(event, 'beds')" class="tablinks">Beds</a>
+  <a href="#" onclick="openCity(event, 'mattresses')" class="tablinks">Mattresses</a>
+  <a href="#" onclick="openCity(event, 'storage')" class="tablinks">Storage Solutions</a>
+  <a href="#" onclick="openCity(event, 'kitchen')" class="tablinks">Kitchen Solutions</a>
+  <a href="#" onclick="openCity(event, 'children')" class="tablinks">Children Furniture</a>
+  <a href="#" onclick="openCity(event, 'outdoor')" class="tablinks">Balcony & Garden</a>
+  <a href="javascript:void(0);" class="icon" onclick="categorySlider()">
+  <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<!----------------------------------------------------------------------------------->
+<!-- Tab content -->
+<div id="sofas" class="tabcontent">
+    <div id="best-grid">
+        <div>
+            <div>
+                <img src="images/sofas/antique-wooden-sofa.jpg">
+            </div>
+            <div>
+                <span>Antique Wooden Sofa</span><br>
+                <span>200+ options</span><br><span>Starting ₹20710 </span>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="images/sofas/chic-mid-century-modern.jpg">
+            </div>
+            <div>
+                <span>Modern Classic Sofa</span><br>
+                <span>120+ options</span><br><span>Starting ₹18759 </span>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="images/sofas/luxury-light-vintage.jpg">
+            </div>
+            <div>
+                <span>Old School Sofa Set</span><br>
+                <span>100+ options</span><br><span>Starting ₹32799 </span>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="images/sofas/pillow-sofa.jpg">
+            </div>
+            <div>
+                <span>Ergonomic Sofa Set</span><br>
+                <span>250+ options</span><br><span>Starting ₹23799 </span>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="images/sofas/room-design.jpg">
+            </div>
+            <div>
+                <span>Classic Single Sofa</span><br>
+                <span>140+ options</span><br><span>Starting ₹15079 </span>
+            </div>
+        </div>
+    </div>
+    <h4><a href="#" style="text-decoration: none;">View All Sofas</a></h4>  
+    </div>
+
+
+<div id="chairs" class="tabcontent">
+    <div id="best-grid">
+        <div>
+            <div>
+                <img src="images/chairs/table-chair.jpg">
+            </div>
+            <div>
+                <span>Dining Table Chairs</span><br>
+                <span>100+ options</span><br><span>Starting ₹2480 </span>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="images/chairs/chair-texture.jpg">
+            </div>
+            <div>
+                <span>Elegant Textured Chairs</span><br>
+                <span>120+ options</span><br><span>Starting ₹3420 </span>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="images/chairs/chair-duos.jpg">
+            </div>
+            <div>
+                <span>Modern Side Table Chairs</span><br>
+                <span>180+ options</span><br><span>Starting ₹2799 </span>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="images/chairs/blue-white-chair.jpg">
+            </div>
+            <div>
+                <span>Ergonomic Chairs</span><br>
+                <span>250+ options</span><br><span>Starting ₹3799 </span>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="images/chairs/blue-dining.jpg">
+            </div>
+            <div>
+                <span>Vintage Striped Chair</span><br>
+                <span>40+ options</span><br><span>Starting ₹4270 </span>
+            </div>
+        </div>
+    </div>
+    <h4><a href="#" style="text-decoration: none;">View All Chairs</a></h4>  
+    </div>
+
+  
+<div id="tables" class="tabcontent">
+    <div id="best-grid">
+        <div>
+            <div>
+                <img src="images/tables/coffee-small-round-table.jpg">
+            </div>
+            <div>
+                <span>Round Coffee Table</span><br>
+                <span>300+ options</span><br><span>Starting ₹10710 </span>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="images/tables/glass-table.jpg">
+            </div>
+            <div>
+                <span>Glass Center Table</span><br>
+                <span>120+ options</span><br><span>Starting ₹12759 </span>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="images/tables/premum-wood-dining-table.jpg">
+            </div>
+            <div>
+                <span>Modern Dining Tables</span><br>
+                <span>180+ options</span><br><span>Starting ₹15799 </span>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="images/tables/red-chair-table-cafe.jpg">
+            </div>
+            <div>
+                <span>Stylish Coffee Tables</span><br>
+                <span>250+ options</span><br><span>Starting ₹13799 </span>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="images/tables/table-set-dinning-table.jpg">
+            </div>
+            <div>
+                <span>6 Seater Dining Table</span><br>
+                <span>140+ options</span><br><span>Starting ₹20079 </span>
+            </div>
+        </div>
+    </div>
+    <h4><a href="#" style="text-decoration: none;">View All Tables</a></h4>  
+    </div>
+
+
+<div id="beds" class="tabcontent">
+    <div id="best-grid">
+        <div>
+            <div>
+                <img src="images/beds/blue-grey-modern-bed.jpg">
+            </div>
+            <div>
+                <span>Low Height Bed Blue</span><br>
+                <span>200+ options</span><br><span>Starting ₹14310 </span>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="images/beds/double-bed-with-pillows.jpg">
+            </div>
+            <div>
+                <span>Luxury Floating Beds</span><br>
+                <span>120+ options</span><br><span>Starting ₹25759 </span>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="images/beds/double-bed.jpg">
+            </div>
+            <div>
+                <span>Modern Teakwood Beds</span><br>
+                <span>180+ options</span><br><span>Starting ₹18799 </span>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="images/beds/luxury-bed.jpg">
+            </div>
+            <div>
+                <span>Luxury Duco Beds</span><br>
+                <span>200+ options</span><br><span>Starting ₹33799 </span>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="images/beds/teakwood-bed.jpg">
+            </div>
+            <div>
+                <span>Modern King Size Bed</span><br>
+                <span>140+ options</span><br><span>Starting ₹10079 </span>
+            </div>
+        </div>
+    </div>
+    <h4><a href="#" style="text-decoration: none;">View All Beds</a></h4>  
+    </div>
+  
+<div id="mattresses" class="tabcontent">
+    <div id="best-grid">
+        <div>
+            <div>
+                <img src="images/mattresses/bikaga-queen-size-6inch.jpg">
+            </div>
+            <div>
+                <span>Bikaga Queen Size</span><br>
+                <span>100+ options</span><br><span>Starting ₹9710 </span>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="images/mattresses/drake-queen-size-8inch.jpg">
+            </div>
+            <div>
+                <span>Drake Queen Size</span><br>
+                <span>120+ options</span><br><span>Starting ₹13759 </span>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="images/mattresses/guild-queen-size-10inch.jpg">
+            </div>
+            <div>
+                <span>Guild Spring Mattress</span><br>
+                <span>180+ options</span><br><span>Starting ₹10799 </span>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="images/mattresses/monatana-king-size-10inch.jpg">
+            </div>
+            <div>
+                <span>Montana Foam Mattress</span><br>
+                <span>250+ options</span><br><span>Starting ₹9799 </span>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="images/mattresses/windsor-queensize-8inch.jpg">
+            </div>
+            <div>
+                <span>Windsor Memory Foam</span><br>
+                <span>140+ options</span><br><span>Starting ₹10079 </span>
+            </div>
+        </div>
+    </div>
+    <h4><a href="#" style="text-decoration: none;">View All Mattresses</a></h4>  
+    </div>
+
+
+<div id="storage" class="tabcontent">
+    <div id="best-grid">
+        <div>
+            <div>
+                <img src="images/storage/luxury-modern-storage.jpg">
+            </div>
+            <div>
+                <span>Antique Blue Storage</span><br>
+                <span>200+ options</span><br><span>Starting ₹8710 </span>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="images/storage/moder-white-cupboard.jpg">
+            </div>
+            <div>
+                <span>3 Door Closet</span><br>
+                <span>120+ options</span><br><span>Starting ₹13759 </span>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="images/storage/modern-drawer.jpg">
+            </div>
+            <div>
+                <span>Modern Side Cabinets</span><br>
+                <span>180+ options</span><br><span>Starting ₹2799 </span>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="images/storage/scandinavian-wood-closet.jpg">
+            </div>
+            <div>
+                <span>Modern Closet Room </span><br>
+                <span>200+ options</span><br><span>Starting ₹23799 </span>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="images/storage/wooden-piece-furniture-interior.jpg">
+            </div>
+            <div>
+                <span>Luxury Teak Cabinets</span><br>
+                <span>140+ options</span><br><span>Starting ₹5679 </span>
+            </div>
+        </div>
+    </div>
+    <h4><a href="#" style="text-decoration: none;">View All Storage</a></h4>  
+    </div>
+  
+<div id="kitchen" class="tabcontent">
+    <div id="best-grid">
+        <div>
+            <div>
+                <img src="images/kitchen/green-kitchen.jpg">
+            </div>
+            <div>
+                <span>Pastel Kitchen-Teal</span><br>
+                <span>50+ options</span><br><span>Starting ₹45710 </span>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="images/kitchen/interior-modern-kitchen.jpg">
+            </div>
+            <div>
+                <span>Modern Teak Kitchen</span><br>
+                <span>120+ options</span><br><span>Starting ₹67759 </span>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="images/kitchen/kitchen-interior.jpg">
+            </div>
+            <div>
+                <span>AntiqueW Kitchen Wood</span><br>
+                <span>100+ options</span><br><span>Starting ₹42799 </span>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="images/kitchen/minimal-kitchen-with-wood.jpg">
+            </div>
+            <div>
+                <span>Stylish Offwhite Teak</span><br>
+                <span>150+ options</span><br><span>Starting ₹83799 </span>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="images/kitchen/white-minimal-kitchen.jpg">
+            </div>
+            <div>
+                <span>Modern Kitchen Shelves</span><br>
+                <span>140+ options</span><br><span>Starting ₹57079 </span>
+            </div>
+        </div>
+    </div>
+    <h4><a href="#" style="text-decoration: none;">View All Kitchen</a></h4>  
+    </div>
+
+
+<div id="outdoor" class="tabcontent">
+    <div id="best-grid">
+        <div>
+            <div>
+                <img src="images/outdoor/blue-cane-outdoor.jpg">
+            </div>
+            <div>
+                <span>Blue Cane Outdoor Chairs</span><br>
+                <span>100+ options</span><br><span>Starting ₹3710 </span>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="images/outdoor/stone-table-chairs.jpg">
+            </div>
+            <div>
+                <span>Wrought Iron Chairs</span><br>
+                <span>20+ options</span><br><span>Starting ₹2759 </span>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="images/outdoor/wood-sea-outdoor.jpg">
+            </div>
+            <div>
+                <span>Outdoor Cane Luxury Beds</span><br>
+                <span>180+ options</span><br><span>Starting ₹7799 </span>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="images/outdoor/wooden-chair-terrace.jpg">
+            </div>
+            <div>
+                <span>Modern Outdoor Chairs</span><br>
+                <span>150+ options</span><br><span>Starting ₹4799 </span>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="images/outdoor/wooden-sofa-chair.jpg">
+            </div>
+            <div>
+                <span>Outdoor Seating Sofa set</span><br>
+                <span>100+ options</span><br><span>Starting ₹10079 </span>
+            </div>
+        </div>
+    </div>
+    <h4><a href="#" style="text-decoration: none;">View All Outdoor</a></h4>  
+    </div>
+  
+<div id="children" class="tabcontent">
+    <div id="best-grid">
+        <div>
+            <div>
+                <img src="images/children/bedroom-baby.jpg">
+            </div>
+            <div>
+                <span>Kids Cribs and Cabinets</span><br>
+                <span>100+ options</span><br><span>Starting ₹8710 </span>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="images/children/children-chair-room.jpg">
+            </div>
+            <div>
+                <span>Children seating chairs</span><br>
+                <span>120+ options</span><br><span>Starting ₹2759 </span>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="images/children/children-eco.jpg">
+            </div>
+            <div>
+                <span>Modern Bunk Beds</span><br>
+                <span>80+ options</span><br><span>Starting ₹7799 </span>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="images/children/green-children-table-chair.jpg">
+            </div>
+            <div>
+                <span>Ergonomic Kids tables</span><br>
+                <span>150+ options</span><br><span>Starting ₹1799 </span>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="images/children/table-children.jpg">
+            </div>
+            <div>
+                <span>Decorative kids lamps</span><br>
+                <span>110+ options</span><br><span>Starting ₹1079 </span>
+            </div>
+        </div>
+    </div>
+    <h4><a href="#" style="text-decoration: none;">View All Kids</a></h4>  
+    </div>
+
+<!----------------------------------------------------------------------------------->
+<div class="spacer"></div>
+
+
+<!----------------------------------------------------------------------------------->
+<div class="craft">
+    <div class="container">
+        <div class="rowtt" style="background-color:antiquewhite;">
+            <div class="colatt">
+                <label for="invoice"><b>Invoice Number</b></label>
+                <input type="text" name="invoice" id="invoice" placeholder="Order / Invoice Number">
+                <hr>
+                <label for="mobile"><b>Mobile Number</b></label>
+                <input type="text" name="mobile" id="mobile" placeholder="Mobile Number">
+                <hr>
+                <button id="submitbtn">Submit</button>            
+            </div>
+            <div class="colbtt" style="background-image: url(images/table-setting-dinner.jpg);"></div>
+
+        </div>
+    </div>
+
+</div>
+<!----------------------------------------------------------------------------------->
+<div class="spacer"></div>
+
+<!----------------------------------------------------------------------------------->
+<!--Track and Trace-->
+<div class="craft">
+    <div class="container">
+        <div class="row" style="background-color:white;">
+            <div class="cola">
+                <h2 class="heading">
+                    Track and Trace
+                </h2>
+                <p class="para-line">
+                    You can live track your furniture delivery to make sure you and your home are prepared in time. 
+            Log on to counchly.in with your registered contact number and be reassured about where your 
+            purchases are at any time.
+                </p>
+            </div>
+            <div class="colb" style="background-image: url(images/track.png);"></div>
+        </div>
+    </div>
+</div>
+
+
+<!----------------------------------------------------------------------------------->
+<div class="spacer"></div>
+
+
+    <div class="craft">
+        <div class="container">
+            <div class="row" style="background-color:aliceblue">
+                <div class="cola">
+                    <h2 class="heading">
+                        Assembled for you
+                    </h2>
+                    <p class="para-line">
+                        You can live track your furniture delivery to make sure you and your home are prepared in time. 
+                Log on to counchly.in with your registered contact number and be reassured about where your 
+                purchases are at any time.
+                    </p>
+                </div>
+                <div class="colb" style="background-image: url(images/assembld.png);"></div>
+
+
+            </div>
+        </div>
+    </div>
+    
+
+
+
+  <!----------------------------------------------------------------------------------->
+<!--Footer-->
+<footer class="foot">
+    <div>
+        <p>Find us on Social Media</p>
+        <div>
+          <a href="#"><img src='images/insta.png'></a>
+          <a href="#"><img src='images/facebook.png'></a>
+          <a href="#"><img src='images/twitter.png'></a>
+          <a href="#"><img src='images/mail.png'></a>
+        </div>
+    </div>
+      <div>
+        <p onclick="window.location.href='index.html';" style="cursor:pointer">Home</p>
+        <p onclick="window.location.href='about.html';" style="cursor:pointer">About Us</p>
+        <p onclick="window.location.href='homedelivery.html';" style="cursor:pointer">Home-Delivery</p>
+        <p onclick="window.location.href='store.html#navigatehere';" style="cursor:pointer">Locate Stores</p>
+      </div>
+  
+      <div>
+        <p onclick="window.location.href='signup.html';" style="cursor:pointer">My Account</p>
+        <p onclick="window.location.href='signup.html';" style="cursor:pointer">My Collections</p>
+        <p onclick="window.location.href='signup.html';" style="cursor:pointer">My Favorites</p>
+        <p onclick="window.location.href='signup.html';" style="cursor:pointer">Recently Added</p>
+      </div>
+</footer>
+<!--Adding an external javascript-->
+<script src="script.js"></script>
+</body>
+</html>
